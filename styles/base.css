@@ -46,7 +46,7 @@ h3 {
 
 img {
     max-height: fit-content;
-    max-width: 55px;
+    max-width: 46px;
 }
 
 main {
@@ -85,5 +85,5 @@ ul {
 
 /* ID Selectors */
 #lastModified { 
-    color: red;
+    color: #750000;
 }
