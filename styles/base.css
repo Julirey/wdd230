@@ -10,6 +10,9 @@ body {
     font-family: 'Roboto', Helvetica, sans-serif;
     text-align: center;
     margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 footer {
@@ -30,7 +33,7 @@ hr {
     height: 1px;
     border: 0;
     border-top: 1px solid gray;
-    margin: 1em 0;
+    margin: 0.5em 0;
     padding: 0;
 }
 
@@ -51,7 +54,7 @@ img {
 
 main {
     display: grid;
-    max-width: 600px;
+    max-width: 720px;
     margin: auto;
     grid-template-rows: 1fr auto;
     padding: 16px;
@@ -63,6 +66,10 @@ nav a {
     padding: 10px 16px;
     background: black;
     color: white;
+}
+
+nav a:hover {
+	text-decoration:underline;
 }
 
 ul {

@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="favicon.ico">
-    <meta property="og:title" content="Julio Reyes - WDD 230 - Web Frontend Development" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ffedecamarasradio.com%2Fwp-content%2Fuploads%2F2021%2F11%2Fzulia-economia-produccion-combustible-voracidadfiscal-propuestas-fedecamaras-federadiove.jpg&f=1&nofb=1&ipt=0783b983d12dfb6e5936eec529b159bbb33c59bd9d018e594b9a147099ecb749&ipo=images" />
-    <meta property="og:url" content="https://julirey.github.io/wdd230/" />
+    <meta property="og:title" content="Julio Reyes - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ffedecamarasradio.com%2Fwp-content%2Fuploads%2F2021%2F11%2Fzulia-economia-produccion-combustible-voracidadfiscal-propuestas-fedecamaras-federadiove.jpg&f=1&nofb=1&ipt=0783b983d12dfb6e5936eec529b159bbb33c59bd9d018e594b9a147099ecb749&ipo=images">
+    <meta property="og:url" content="https://julirey.github.io/wdd230/">
     <title>Julio Reyes - WDD 230 - Web Frontend Development</title>
     <meta name="author" content="Julio Cesar Reyes Coronel">
     <meta 
@@ -17,6 +17,7 @@
         and revisions as assigned.">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
 </head>
 <body>
     <header>
@@ -58,9 +59,11 @@
         </section>
     </main>
     <footer>
-        <p>©20XX<br> 
-        Julio Cesar Reyes Coronel<br>
-        Venezuela</p>
+        <div class="infoFlexBox">
+            <p id="copyrightYear">©20XX</p> 
+            <p>Julio Cesar Reyes Coronel</p>
+            <p>Venezuela</p>
+        </div>
         <p id="lastModified">Last Modification: XX/XX/XXXX 00:00:00</p>
     </footer>
     <script src="scripts/getdates.js"></script>
