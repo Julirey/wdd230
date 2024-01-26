@@ -32,6 +32,9 @@
     }
 
     /* ID Selectors */
+    #map {
+        grid-column: span 2;
+    }
     #menu {
         display: none;
     }

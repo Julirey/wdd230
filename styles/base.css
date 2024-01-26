@@ -52,7 +52,7 @@ img {
 
 main {
     display: grid;
-    max-width: 720px;
+    max-width: 1024px;
     margin: auto;
     grid-template-rows: 1fr auto;
     padding: 16px;
@@ -119,6 +119,14 @@ main {
 	top: 1.5rem;
 	right: 1rem;
     border-radius: 10px;
+}
+
+#map {
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: auto auto;
+    width: 100%;
+    overflow: hidden;
 }
 
 #menu::before {
