@@ -35,20 +35,17 @@ footer {
 header {
     display: grid;
     align-items: center;
-    grid-template-columns: 100px 200px 1fr 1fr;
+    grid-template-columns: auto auto 1fr 1fr;
+    gap: 1rem;
     padding: 5px;
     background: var(--primary-color);
-    max-height: 200px;
+    height: 65px;
     color: white;
-}
-
-header h4 {
-    grid-column: 2/3;
-    margin: 0px;
 }
 
 header h1 {
     margin: auto auto;
+    font-size: clamp(.75rem, 1.5vw, 3rem);
 }
 
 header img {
@@ -199,18 +196,20 @@ display: inline-block;
 #footer-infobox {
     padding: 25px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto 1fr;
     align-items: center;
     gap: 3rem;
 }
 
 #footer-infobox img {
     justify-self: right;
+    height: fit-content;
+    width: auto;
     padding: 0px 0px;
 }
 
 
-#footer-infobox h1, #footer-infobox h4, #footer-infobox p {
+#footer-infobox h2, #footer-infobox h4, #footer-infobox p {
     text-align: left;
     margin: 0px;
 }
