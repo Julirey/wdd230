@@ -68,7 +68,8 @@ h2 {
 }
 
 main {
-    max-width: 1270px;
+    width: 100%;
+    max-width: 1280px;
     margin: auto;
 }
 
@@ -139,6 +140,7 @@ p {
 }
 
 .social {
+    margin-right: 50px;
     min-width: 100px;
     justify-self: end;
 }
@@ -208,7 +210,6 @@ p {
     padding: 0px 0px;
 }
 
-
 #footer-infobox h2, #footer-infobox h3, #footer-infobox p {
     text-align: left;
     margin: 0px;
@@ -228,7 +229,7 @@ p {
     text-decoration: underline;
 }
 
-#hero{
+#hero {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     grid-template-rows: 1fr 1fr;
