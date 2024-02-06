@@ -47,6 +47,11 @@
         margin-top: -25px;
         height: 300px;
         overflow: hidden;
+        border-bottom: solid var(--secondary-color) 5px;
+    }
+
+    #hero-img {
+        border-bottom: none;
     }
 
     #member-spotlights {

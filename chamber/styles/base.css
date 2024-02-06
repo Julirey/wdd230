@@ -246,6 +246,7 @@ p {
 
 #hero-img {
     width: 100%;
+    border-bottom: solid var(--secondary-color) 5px;
 }
 
 #member-spotlights {
