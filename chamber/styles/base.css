@@ -1,0 +1,278 @@
+/* Universal Selector */
+* {
+    box-sizing: border-box;
+}
+
+:root{
+    /* Colors */
+    --primary-color: #020066;
+    --secondary-color: #019dbc;
+    --accent1-color: #bfdbf7;
+    --accent2-color: #e1e5f2;
+    
+    /* Fonts */
+    --heading-font: Montserrat, Helvetica, sans-serif;
+    --paragraph-font: "DM Sans", Helvetica, sans-serif;
+}
+
+/* HTML Selectors */
+body {
+    font-family: Montserrat, Helvetica, sans-serif;
+    text-align: left;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    background: var(--primary-color);
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+header {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 100px 200px 1fr 1fr;
+    padding: 5px;
+    background: var(--primary-color);
+    max-height: 200px;
+    color: white;
+}
+
+header h4 {
+    grid-column: 2/3;
+    margin: 0px;
+}
+
+header h1 {
+    margin: auto auto;
+}
+
+header img {
+    justify-self: center;
+    max-height: fit-content;
+    max-width: 46px;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid gray;
+    margin: 0.5em 0;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+}
+
+main {
+    max-width: 1270px;
+    margin: auto;
+}
+
+p {
+    font-family: var(--paragraph-font);
+}
+
+/* Class Selectors */
+.card {
+    background: rgb(231, 231, 231);
+    border: solid var(--secondary-color) 3px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 20px 0px;
+    padding: 0px 20px;
+    overflow: hidden;
+}
+
+.member {
+    padding: 20px;
+    text-align: center;
+}
+
+.member a {
+    font-family: var(--paragraph-font);
+    display: block;
+    text-decoration: none;
+    color: blue;
+}
+
+.member img {
+    max-height: fit-content;
+    max-width: 200px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.member hr + p {
+    text-align: right;
+}
+
+.member h3 {
+    margin-top: 0px;
+    text-align: left;
+}
+
+.navigation {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.navigation a {
+    display: none;
+    text-decoration: none;
+    text-align: center;
+    padding: 20px 0px;
+    background: black;
+    color: white;
+}
+
+.navigation a:hover {
+	text-decoration:underline;
+}
+
+.open a{
+    display: block;
+}
+
+.social {
+    min-width: 100px;
+    justify-self: end;
+}
+
+.social img {
+    border-radius: 25px;
+    width: 200px;
+    margin: auto;
+}
+
+.social a {
+display: inline-block;
+}
+
+.vl {
+    display: none;
+}
+
+/* ID Selectors */
+#active::before {
+	content: ">| "; 
+}
+
+#active::after {
+	content: " |<"; 
+}
+
+#active {
+    color: rgb(255, 255, 0);
+}
+
+#button-box {
+    grid-area: 1/2/3/3;
+    justify-self: center;
+    align-self: center;
+    border-radius: 10px;
+    padding: 20px 30px;
+    color: black;
+    background: var(--accent1-color);
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#button-box:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+#content {
+    display: grid;
+    padding: 0px 16px;
+}
+
+#footer-infobox {
+    padding: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 3rem;
+}
+
+#footer-infobox img {
+    justify-self: right;
+    padding: 0px 0px;
+}
+
+
+#footer-infobox h1, #footer-infobox h4, #footer-infobox p {
+    text-align: left;
+    margin: 0px;
+}
+
+#footer-infobox div:nth-child(3) {
+    grid-column: span 2;
+}
+
+#footer-infobox a {
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+#footer-infobox a:hover {
+    text-decoration: underline;
+}
+
+#hero{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+#hero-box {
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
+}
+
+#hero-msg h4 {
+    color: white;
+}       
+
+#hero-img {
+    width: 100%;
+}
+
+#member-spotlights {
+    padding: 0px 20px;
+}
+
+#menu {
+	font-size: 1.5rem;
+	border: 1px solid rgba(0,0,0,.3);
+	padding: 4px 8px;
+	background-color: #eee;
+	color: #000;
+ 	position: absolute;
+	top: 0.8rem;
+	right: 1rem;
+    border-radius: 10px;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "X";
+}
+
+#lastModified { 
+    color: #eeff00;
+}

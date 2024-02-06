@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="Maracaibo Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.aNnWonCexhICLj_VHD0-kQHaD4%26pid%3DApi&f=1&ipt=9795c260e6d53f69395e11ac2c38475865104e790c4859c58ed282977ef5b6d2&ipo=images">
+    <meta property="og:url" content="https://julirey.github.io/wdd230/chamber">
+    <title>Maracaibo Chamber of Commerce</title>
+    <meta name="author" content="Julio Cesar Reyes Coronel">
+    <meta 
+        name="description" 
+        content="Home page for the WDD230 - Front End Development course. It will serve as
+        a course assignment portal of Julio Cesar Reyes Coronel. It will be updated each week with links to the activities
+        and revisions as assigned.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Logo of Maracaibo Chamber">
+        <div id="Title">
+            <h1>Maracaibo</h1>
+            <h4>Chamber of Commerce</h4>
+        </div>
+        <div class="social">
+            <a href="#" target="_blank">
+                <img src="images/facebook.png" alt="facebook icon">
+            </a>
+            <a href="#" target="_blank">
+                <img src="images/instagram.png" alt="instagram icon">
+            </a>
+        </div>
+    </header>
+    <button id="menu"></button>
+    <nav>
+        <ul class="navigation">
+            <li><a id="active" href="#">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div id="hero">
+            <div id="hero-box">
+                <img id="hero-img" src="images/hero-maracaibo.jpg" alt="Picture of buildings in Maracaibo">
+            </div>
+            <a id="button-box" href="#">Join the Chamber</a>
+        </div>
+        <div id="content">
+            <section class="card">
+                <h3>Learning Activities</h3>
+                <hr>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At tenetur soluta similique deserunt aperiam accusantium quos maxime voluptate. Cupiditate eius modi vitae quam error enim fugiat, explicabo soluta omnis ab id molestiae. Sed neque magni tenetur voluptates libero mollitia asperiores veniam odio obcaecati pariatur enim accusamus, quidem inventore molestiae corrupti perspiciatis dolore vel. Culpa, illum? Nostrum omnis libero nihil, soluta expedita deleniti, molestias aliquid veniam vero eaque, ut aspernatur. Soluta, sapiente deserunt corrupti ipsa sit fuga labore error reiciendis fugit impedit a sunt excepturi totam mollitia debitis voluptatum harum.</p>
+            </section>
+            <section class="card">
+                <h3>Weather</h3>
+                <hr>
+                <p>Zulia, Venezuela</p>
+                <p>29°C - Sunshine</p>
+                <p>Page Visits : 4</p>
+            </section>
+            <h2>Member Spotlights</h2>
+            <div id="member-spotlights">
+                <section class="card member">
+                    <h3>Instituto Latino</h3>
+                    <img src="images/instituto.jpg" alt="Instituto Latino Logo">
+                    <hr>
+                    <p>~"Making sure everybody has a chance to be brilliant"</p>
+                    <a href="#" target="_blank">contactsupport@maratransport.com</a>
+                    <a href="#" target="_blank">+999-9999-9999</a>
+                    <a href="#" target="_blank">Website</a>
+                </section>
+                <section class="card member">
+                    <h3>Mara Transport</h3>
+                    <img src="images/mara-tranport.png" alt="Mara Transport Logo">
+                    <hr>
+                    <p>~"We'll get you from anywhere, to everywhere, at any time"</p>
+                    <a href="#" target="_blank">contactsupport@maratransport.com</a>
+                    <a href="#" target="_blank">+999-9999-9999</a>
+                    <a href="#" target="_blank">Website</a>
+                </section>
+                <section class="card member">
+                    <h3>Hidrolago</h3>
+                    <img src="images/hidrolago.jpg" alt="Hidrolago Logo">
+                    <hr>
+                    <p>~"Fulfilling the right to have water"</p>
+                    <a href="#" target="_blank">information@hidrolagoca.com</a>
+                    <a href="#" target="_blank">+999-9999-9999</a>
+                    <a href="#" target="_blank">Website</a>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <section id="footer-infobox">
+            <img src="images/logo.png" alt="Logo of Maracaibo Chamber">
+            <div>
+                <h1>Maracaibo</h1>
+                <h4>Chamber of Commerce</h4>
+                <p>110 Av.24 Carretera La Paz</p>
+                <p>Maracaibo, Venezuela</p>
+            </div>
+            <div>
+                <a href="#">contactus@marachamber.com</a>
+                <a href="#">+(999) 9999-9999</a>
+                <a href="#">📍 Location Map</a>
+            </div>
+        </section>
+        <hr>
+        <div class="infoFlexBox">
+            <p id="copyrightYear">©20XX Maracaibo Chamber</p> 
+            <p class="vl">|</p> 
+            <p>Julio Cesar Reyes Coronel</p>
+            <p class="vl">|</p> 
+            <p>WDD 230 Project</p>
+            <p class="vl">|</p> 
+            <p id="lastModified">Last Modification: XX/XX/XXXX 00:00:00</p>
+        </div>
+    </footer>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
