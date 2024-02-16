@@ -24,7 +24,7 @@
 </head>
 <body>
     <header>
-        <img src="images/portrait.jpg" alt="Picture of Julio Reyes">
+        <img src="images/portrait.webp" alt="Picture of Julio Reyes">
         <h1>Julio Reyes</h1>
     </header>
     <button id="menu"></button>
@@ -38,6 +38,16 @@
         </ul>
     </nav>
     <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-small.webp" media="(max-width: 400px)">
+                <source srcset="images/hero.webp" media="(max-width: 960px)">
+                <img src="images/hero.webp" alt="Caracas Temmple" width="960" height="540">
+            </picture>
+            <div class="herolabel">
+                <p>Caracas Temple</p>
+            </div>
+        </div>
         <h2>WDD230: Web Frontend Development</h2>
         <hr>
         <section class="card">
