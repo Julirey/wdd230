@@ -95,16 +95,13 @@ p {
 
 .card a {
     color: blue;
+    font-family: var(--paragraph-font);
+    display: block;
 }
 
 .member {
     padding: 20px;
     text-align: center;
-}
-
-.member a {
-    font-family: var(--paragraph-font);
-    display: block;
 }
 
 .member img {
