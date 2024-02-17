@@ -31,16 +31,16 @@
 </head>
 <body>
     <header>
-        <img src="images/logo.png" alt="Logo of Maracaibo Chamber">
+        <img src="images/logo.webp" alt="Logo of Maracaibo Chamber">
         <div id="Title">
             <h1>Maracaibo Chamber of Commerce</h1>
         </div>
         <div class="social">
             <a href="#" target="_blank">
-                <img src="images/facebook.png" alt="facebook icon">
+                <img src="images/facebook.webp" alt="facebook icon">
             </a>
             <a href="#" target="_blank">
-                <img src="images/instagram.png" alt="instagram icon">
+                <img src="images/instagram.webp" alt="instagram icon">
             </a>
         </div>
     </header>
@@ -57,7 +57,12 @@
     <main>
         <div id="hero">
             <div id="hero-box">
-                <img id="hero-img" src="images/hero-maracaibo.jpg" alt="Picture of buildings in Maracaibo">
+                <picture>
+                    <source srcset="images/hero-small.webp" media="(max-width: 500px)">
+                    <source srcset="images/hero-medium.webp" media="(max-width: 1000px)">
+                    <img id="hero-img" src="images/hero-large.webp" alt="Picture of three people having a meeting" width="1500" height="1000">
+                </picture>
+                <!-- <img id="hero-img" src="images/hero-maracaibo.webp" alt="Picture of buildings in Maracaibo"> -->
             </div>
             <a id="button-box" href="#">Join the Chamber</a>
         </div>
@@ -86,7 +91,7 @@
             <div id="member-spotlights">
                 <section class="card member">
                     <h3>Instituto Latino</h3>
-                    <img src="images/instituto.jpg" alt="Instituto Latino Logo">
+                    <img src="images/instituto.webp" alt="Instituto Latino Logo">
                     <hr>
                     <p>~"Making sure everybody has a chance to be brilliant"</p>
                     <a href="#" target="_blank">contactsupport@maratransport.com</a>
@@ -95,7 +100,7 @@
                 </section>
                 <section class="card member">
                     <h3>Mara Transport</h3>
-                    <img src="images/mara-tranport.png" alt="Mara Transport Logo">
+                    <img src="images/mara-tranport.webp" alt="Mara Transport Logo">
                     <hr>
                     <p>~"We'll get you from anywhere, to everywhere, at any time"</p>
                     <a href="#" target="_blank">contactsupport@maratransport.com</a>
@@ -104,7 +109,7 @@
                 </section>
                 <section class="card member">
                     <h3>Hidrolago</h3>
-                    <img src="images/hidrolago.jpg" alt="Hidrolago Logo">
+                    <img src="images/hidrolago.webp" alt="Hidrolago Logo">
                     <hr>
                     <p>~"Fulfilling the right to have water"</p>
                     <a href="#" target="_blank">information@hidrolagoca.com</a>
@@ -116,7 +121,7 @@
     </main>
     <footer>
         <section id="footer-infobox">
-            <img src="images/logo.png" alt="Logo of Maracaibo Chamber">
+            <img src="images/logo.webp" alt="Logo of Maracaibo Chamber">
             <div>
                 <h2>Maracaibo</h2>
                 <h3>Chamber of Commerce</h3>

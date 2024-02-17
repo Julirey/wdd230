@@ -48,15 +48,15 @@
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         grid-column: 1/3;
-        margin-top: -25px;
-        height: 300px;
+        /* margin-top: -25px; */
+        /* height: 300px; */
         overflow: hidden;
-        border-bottom: solid var(--secondary-color) 5px;
+        /* border-bottom: solid var(--secondary-color) 5px; */
     }
 
-    #hero-img {
+    /* #hero-img {
         border-bottom: none;
-    }
+    } */
 
     #member-spotlights {
         grid-column: span 2;
