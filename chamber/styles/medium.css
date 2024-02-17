@@ -1,5 +1,9 @@
 @media screen and (min-width: 740px) {
     /* HTML Selectors */
+    header {
+        padding: 5px 50px;
+    }
+
     h2 {
         grid-column: span 2;
     }
@@ -65,5 +69,9 @@
 
     #menu {
         display: none;
+    }
+
+    #mode {
+        top: 1rem;
     }
 }

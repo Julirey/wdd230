@@ -16,6 +16,10 @@
 }
 
 /* HTML Selectors */
+a {
+    text-decoration: none;
+}
+
 body {
     font-family: Montserrat, Helvetica, sans-serif;
     text-align: left;
@@ -27,6 +31,7 @@ body {
 
 footer {
     background: var(--primary-color);
+    margin-top: 40px;
     padding: 10px;
     text-align: center;
     color: white;
@@ -88,6 +93,10 @@ p {
     overflow: hidden;
 }
 
+.card a {
+    color: blue;
+}
+
 .member {
     padding: 20px;
     text-align: center;
@@ -96,8 +105,6 @@ p {
 .member a {
     font-family: var(--paragraph-font);
     display: block;
-    text-decoration: none;
-    color: blue;
 }
 
 .member img {
@@ -124,7 +131,6 @@ p {
 
 .navigation a {
     display: none;
-    text-decoration: none;
     text-align: center;
     padding: 20px 0px;
     background: black;
@@ -182,7 +188,6 @@ p {
     background: var(--accent1-color);
     text-align: center;
     cursor: pointer;
-    text-decoration: none;
 }
 
 #button-box:hover {
@@ -193,6 +198,10 @@ p {
 #content {
     display: grid;
     padding: 0px 16px;
+}
+
+#events {
+    padding-bottom: 10px;
 }
 
 #footer-infobox {
@@ -222,7 +231,6 @@ p {
 #footer-infobox a {
     display: block;
     color: white;
-    text-decoration: none;
 }
 
 #footer-infobox a:hover {
@@ -250,6 +258,10 @@ p {
     border-bottom: solid var(--secondary-color) 5px;
 }
 
+#lastModified { 
+    color: #eeff00;
+}
+
 #member-spotlights {
     padding: 0px 20px;
 }
@@ -274,6 +286,26 @@ p {
 	content: "X";
 }
 
-#lastModified { 
-    color: #eeff00;
+#mode {
+	position: absolute;
+	top: 5rem;
+	right: 0.9rem;
+	font-size: 3rem;
+	cursor: pointer;
+	font-size: 2rem;
 }
+
+#weather {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+}
+
+#weather hr{
+    grid-column: span 2;
+}
+
+#weather p:nth-child(2n+1) {
+    display: flex;
+    justify-content: flex-end;
+  }
