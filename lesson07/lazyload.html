@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Lazy Load">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://julirey.github.io/wdd230/lesson07/lazyload.html">
+    <title>Lazy Load</title>
+    <meta name="author" content="Julio Cesar Reyes Coronel">
+    <meta 
+        name="description" 
+        content="Demonstration of lazy loading with multiple images">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/lazyload.css">
+</head>
+<body>
+    <header>
+        <h1>
+            Lazy Load
+        </h1>
+    </header>
+    <main>
+        <picture>
+            <img src="https://placekitten.com/400/600" alt="Kitten Placeholder Image" loading="lazy" width="400" height="600">
+        </picture>
+        <picture>
+            <img src="https://placekitten.com/400/650" alt="Kitten Placeholder Image" loading="lazy" width="400" height="650">
+        </picture>
+        <picture>
+            <img src="https://placekitten.com/400/700" alt="Kitten Placeholder Image" loading="lazy" width="400" height="700">
+        </picture>
+        <picture>
+            <img src="https://placekitten.com/400/750" alt="Kitten Placeholder Image" loading="lazy" width="400" height="750">
+        </picture>
+        <picture>
+            <img src="https://placekitten.com/400/800" alt="Kitten Placeholder Image" loading="lazy" width="400" height="800">
+        </picture>
+        <picture>
+            <img src="https://placekitten.com/400/850" alt="Kitten Placeholder Image" loading="lazy" width="400" height="850">
+        </picture>
+    </main>
+    <footer>
+        <div class="infoFlexBox">
+            <p id="copyrightYear">©20XX</p> 
+            <p>Julio Cesar Reyes Coronel</p>
+            <p>Venezuela</p>
+        </div>
+        <p id="lastModified">Last Modification: XX/XX/XXXX 00:00:00</p>
+    </footer>
+    <script src="scripts/lazyload.js"></script>
+</body>
+</html>
