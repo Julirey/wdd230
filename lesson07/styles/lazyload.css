@@ -45,6 +45,7 @@ picture {
 
 img {
     width: 100%;
+    height: fit-content;
     background: black;
     animation: fade 10s;
     display: block;
