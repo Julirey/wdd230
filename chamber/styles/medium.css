@@ -81,7 +81,7 @@
     /* Discovery page */
     figure:hover {
     box-shadow: 0 0 20px #333;
-}
+    }
 
     .card.discover {
         grid-column: 1/2;

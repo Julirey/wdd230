@@ -110,6 +110,7 @@ p {
     border-radius: 20px;
     overflow: hidden;
 }
+
 .member hr + p {
     text-align: right;
 }
@@ -341,4 +342,9 @@ figcaption {
     padding: 20px;
     gap: 2rem;
     justify-content: space-around;
+}
+
+#discover-images h3 {
+    margin: 0px;
+    text-align: center;
 }
