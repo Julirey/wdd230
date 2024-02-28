@@ -288,7 +288,6 @@ p {
 	position: absolute;
 	top: 5rem;
 	right: 0.9rem;
-	font-size: 3rem;
 	cursor: pointer;
 	font-size: 2rem;
 }
@@ -306,4 +305,39 @@ p {
 #weather p:nth-child(2n+1) {
     display: flex;
     justify-content: flex-end;
-  }
+}
+
+/* Discovery page */
+figure {
+    display: flex;
+    flex-flow: column;
+    margin: 0px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+figure img {
+    display: block;
+    width: 100%;
+    height: fit-content;
+}
+
+figcaption {
+    background-color: #222;
+    color: #fff;
+    padding: 3px;
+    text-align: center;
+}
+
+#content-discover {
+    display: grid;
+    padding: 0px 16px;
+}
+
+#discover-images {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 2rem;
+    justify-content: space-around;
+}

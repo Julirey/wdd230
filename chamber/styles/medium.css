@@ -77,4 +77,23 @@
     #mode {
         top: 1rem;
     }
+
+    /* Discovery page */
+    figure:hover {
+    box-shadow: 0 0 50px #333;
+}
+
+    .card.discover {
+        grid-column: 1/2;
+    }
+
+    #content-discover {
+        grid-template-columns: 4fr 6fr;
+        column-gap: 2rem;
+    }
+
+    #discover-images {
+        grid-column: 2/3;
+        grid-row: 1/5;
+    }
 }
