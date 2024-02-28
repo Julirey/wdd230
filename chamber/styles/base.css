@@ -314,6 +314,7 @@ figure {
     margin: 0px;
     border-radius: 5px;
     overflow: hidden;
+    border: solid var(--secondary-color) 2px;
 }
 
 figure img {
