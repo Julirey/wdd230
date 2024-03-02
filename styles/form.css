@@ -1,3 +1,8 @@
+:root {
+    --primary-color: #445ba9;
+    --secondary-color: #9c2c13;
+}
+
 main {
     display: inline;
     width: 100%;
@@ -18,20 +23,20 @@ main {
 }
 
 .wf1 legend {
-    color: #445ba9;
+    color: var(--primary-color);
     padding: 0 .5rem;
 }
 
 .wf1 Label {
     display: block;
     padding-top: 1rem;
-    color: #9c2c13;
+    color: var(--secondary-color);
     font-size: .9rem;
 }
 
 .wf1 div {
     padding-top: 1rem;
-    color: #445ba9;
+    color: var(--primary-color);
     font-size: .9rem;
 }
 
@@ -50,7 +55,7 @@ main {
 
 .wf1 input[type="submit"] {
     border: none;
-    background-color: #445ba9;
+    background-color: var(--primary-color);
     color: #fff;
     border-radius: 6px;
     padding: .8rem;
@@ -74,7 +79,7 @@ main {
 #rangevalue {
     display: block;
     padding-top: 2px;
-    color: #445ba9;
+    color: var(--primary-color);
 }
 
 #rangevalues {
