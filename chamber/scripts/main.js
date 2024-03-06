@@ -54,7 +54,7 @@ function changeCardLinkColor(color) {
 		let card = cards [i];
 		let links = card.querySelectorAll("a");
 		for (let i = 0; i < links.length; i++) {
-			link = links[i]
+			let link = links[i]
 			link.style.color = color;
 		}
 	}
