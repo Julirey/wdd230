@@ -96,4 +96,20 @@
         grid-column: 2/3;
         grid-row: 1/5;
     }
-}
+
+    /* Join Page */
+    #content-join {
+        display: grid;
+        grid-template-columns: 6fr 4fr;
+        column-gap: 2rem;
+    }
+
+    #content-join h1, .card.join {
+        grid-column: 1/3;
+    }
+
+    .wf1 {
+        grid-column: 1/2
+    }
+}   
+

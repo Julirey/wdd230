@@ -63,7 +63,7 @@
                     <legend>Applicant Information</legend>
                     <label>First Name* <input type="text" name="fname" id="fname" required></label>
                     <label>Last Name* <input type="text" name="lname" id="lname" required></label>
-                    <label>Title or Position* <input type="text" name="title" id="title" pattern="[a-zA-Z0-9]{7,}" required></label>
+                    <label>Title or Position* <input type="text" name="title" id="title" pattern="^[\w\-\s]{7,}$" required></label>
                     <label>Email* <input type="email" name="email" id="email" placeholder="someone@gmail.com" required></label>
                     <label>Phone* <input type="tel" name="phone" id="phone" placeholder="1235551234" required></label>
                     <label>Business/Organization's name* <input type="text" name="business" id="business" required></label>
@@ -76,11 +76,52 @@
                     <p>*NP Membership is for non profit organizations and there is no fee.</p>
 
                     <div>Business/Organization's description</div>
-                    <textarea name="businessdesc" id="businessdesc" rows="5" cols="33"></textarea>
+                    <textarea name="businessdesc" id="businessdesc" rows="5" cols="30" placeholder="Type something about the business here..."></textarea>
                     <input type="hidden" name="date" id="date" value="0">
                 </fieldset>
                 <input type="submit" id="submit" value="Join The Chamber">
-            </form> 
+            </form>
+            <div id="tiers">
+                <section class="card">
+                    <h2>NP Membership</h2>
+                    <hr>
+                        <ul>
+                            <li>No fee to join.</li>
+                            <li>Event advertisement.</li>
+                            <li>Funding for merchandise.</li>
+                            <li>Always available to make revervations for classes and talks.</li>
+                            <li>Exclusive acknowledgements for contribution.</li>
+                        </ul> 
+                </section>
+                <section class="card">
+                    <h2>Bronze Membership</h2>
+                    <hr>
+                        <ul>
+                            <li>Event advertisement.</li>
+                            <li>Support from other members.</li>
+                        </ul>
+                </section>
+                <section class="card">
+                    <h2>Silver Membership</h2>
+                    <hr>
+                        <ul>
+                            <li>Social media management.</li>
+                            <li>Event advertisement.</li>
+                            <li>Discount on training and classes.</li>
+                        </ul> 
+                </section>
+                <section class="card join">
+                    <h2>Gold Membership</h2>
+                    <hr>
+                        <ul>
+                            <li>Social media management.</li>
+                            <li>Event advertisement.</li>
+                            <li>Special Events.</li>
+                            <li>Training.</li>
+                            <li>Funding for merchandise.</li>
+                        </ul> 
+                </section>
+            </div>
         </div>
     </main>
     <footer>

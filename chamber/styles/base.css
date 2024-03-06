@@ -416,8 +416,9 @@ figcaption {
 
 .wf1 #businessdesc {
     margin: 10px 0px;
-    width: auto;
+    width: 100%;
 }
+
 .wf1 input:required {
     border-right: solid 8px red;
 }
