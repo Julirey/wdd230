@@ -1,0 +1,30 @@
+{
+    "wardInformation": {
+    "familyName": "Anderson",
+    "moveInDate": "2019-05-07",
+    "numberOfPeople": 4,
+    "visitedByBishopric": true,
+    "familyMembers": [
+      {
+        "name": "Robert Anderson",
+        "gender": "Male",
+        "birthdate": "1980-02-10"
+      },
+      {
+        "name": "Melissa Anderson",
+        "gender": "Female",
+        "birthdate": "1981-10-01"
+      },
+      {
+        "name": "Dorothy Anderson",
+        "gender": "Female",
+        "birthdate": "2005-06-26"
+      },
+      {
+        "name": "Michael Anderson",
+        "gender": "Male",
+        "birthdate": "2009-01-09"
+      }
+    ]
+    }
+}
