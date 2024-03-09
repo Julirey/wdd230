@@ -9,8 +9,8 @@ let prophetList = [];
 const getProphetData = async () => {
     const response = await fetch(url);
     if (response.ok) {
-        data = await response.json();
-        console.table(data.prophets);
+        let data = await response.json();
+        // console.table(data.prophets);
         displayProphets(data.prophets);
     }
 }
