@@ -1,16 +1,12 @@
 /* Declare and initialize  variables */
 const url = "https://brotherblazzard.github.io/canvas-content/latter-day-prophets.json";
 const cards = document.querySelector("#cards");
-let prophetList = [];
-
-
 
 /* async getProphetData Function using fetch()*/
 const getProphetData = async () => {
     const response = await fetch(url);
     if (response.ok) {
         let data = await response.json();
-        // console.table(data.prophets);
         displayProphets(data.prophets);
     }
 }
