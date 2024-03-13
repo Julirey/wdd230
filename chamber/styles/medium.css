@@ -111,5 +111,11 @@
     .wf1 {
         grid-column: 1/2
     }
+
+    /* Directory page */
+    .list section {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+    }
 }   
 

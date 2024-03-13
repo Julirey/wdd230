@@ -439,3 +439,78 @@ figcaption {
     padding: 20px;
     margin-bottom: 400px;
 }
+
+/* Directory page */
+#content-directory {
+    padding: 0px 20px;
+}
+
+.menu {
+	padding: 1rem;
+	text-align: center;
+}
+
+.menu button {
+	padding: 1rem;
+	font-weight: 700;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
+	grid-gap: 5px 20px;
+    justify-content: center;
+	align-items: center;
+}
+
+.grid section {
+	text-align: center;
+    padding: 10px;
+}
+
+.grid img {
+	border: 1px solid #fff;
+	box-shadow: 0 0 10px #333;
+    height: 200px;
+	max-width: 100%; 
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.grid section > * {
+	margin: 0.1rem;
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+    border: solid 2px lightgray;
+}
+
+.list section {
+    display: flex;
+	flex-direction: column;
+    gap: 5px;
+	margin: 0;
+	padding: 0.5rem;
+    border: none;
+    border-radius: 0px;
+    box-shadow: none;
+    background: white;
+}
+
+.list section > * {
+	margin: 0 1rem;
+}
+
+.list section img {
+	display: none; 
+}
+
+.list section h3 {
+	font-size: 1rem;
+}
+
+.list section:nth-child(even) {
+	background-color: rgb(215, 250, 255);
+}
