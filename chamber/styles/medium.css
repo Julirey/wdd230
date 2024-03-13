@@ -115,7 +115,7 @@
     /* Directory page */
     .list section {
         display: grid;
-        grid-template-columns: 2fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 2fr 1fr 1.5fr 0.5fr;
     }
 }   
 
