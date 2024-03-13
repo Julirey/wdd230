@@ -469,6 +469,7 @@ figcaption {
 }
 
 .grid img {
+    background: white;
 	border: 1px solid #fff;
 	box-shadow: 0 0 10px #333;
     height: 200px;
