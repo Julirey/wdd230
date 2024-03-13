@@ -47,7 +47,8 @@ const displayMembers = (members) => {
         p2.textContent = member.phone;
 
 		let link = document.createElement("a");
-		link.href = member.url;
+		link.href = "#";
+        link.target = "_blank"
 		link.text = member.url;
 
         let p3 = document.createElement("p");
