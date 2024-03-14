@@ -24,15 +24,20 @@ function displayResults(data) {
   const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
   let desc = data.weather[0].description;
 
-  currentTemp.innerHTML = `${Math.round(data.main.temp)}&deg;F - ${desc.toTitleCase()}`;
+  currentTemp.innerHTML = `${Math.round(data.main.temp)}&deg;F - ${toTitleCase(desc)}`;
   weatherIcon.setAttribute("src", iconsrc);
-  weatherIcon.setAttribute("alt", desc.toTitleCase());
+  weatherIcon.setAttribute("alt", toTitleCase(desc));
 }
 
 // Titlecase converter 
-String.prototype.toTitleCase = function () {
-  return this.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
-};
+function toTitleCase(str) {
+  return str.replace(
+    /\w\S*/g,
+    function(txt) {
+      return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+    }
+  );
+}
 
 apiFetch();
 
