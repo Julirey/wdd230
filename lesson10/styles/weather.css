@@ -1,0 +1,45 @@
+/* Universal Selector */
+* {
+    box-sizing: border-box;
+}
+
+/* HTML Selectors */
+body {
+    font-family: 'Roboto', Helvetica, sans-serif;
+    text-align: center;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: rgb(246, 247, 252);
+}
+
+footer {
+    background: lightblue;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    padding: 12px;
+    justify-content: center;
+    background: lightblue;
+    max-height: 100px;
+}
+
+h1 {
+    margin: auto 20px;
+}
+
+p, figure {
+    background: white;
+    padding: 20px;
+    border: solid 3px lightgray;
+    border-radius: 3px;
+}
+
+main {
+    max-width: 600px;
+    margin: auto;
+    padding: 0px 16px;
+}
