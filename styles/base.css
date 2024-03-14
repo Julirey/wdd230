@@ -176,3 +176,9 @@ main {
 #lastModified {
     color: #750000;
 }
+
+#weather-icon {
+    background: rgb(235, 235, 235);
+    border: solid 3px lightgray;
+    border-radius: 3px;
+}
