@@ -62,11 +62,16 @@ function changeCardLinkColor(color) {
 
 // ToggleBanner  
 const bannerEle = document.querySelector("#banner");
+const bannerButton = document.querySelector("#closeBanner")
+
+bannerButton.addEventListener("click", () => {
+	bannerEle.style.display = "none";
+});
 
 function ToggleBanner() {
   const day = new Date();
   if (day.getDay() == 1 || day.getDay() == 2 || day.getDay() == 3) {
-    bannerEle.style.display = "block";
+    bannerEle.style.display = "flex";
   } else {
     bannerEle.style.display = "none";
   }

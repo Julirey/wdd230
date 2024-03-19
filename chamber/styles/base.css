@@ -182,6 +182,9 @@ p {
     text-align: center;
     padding: 20px;
     margin-top: -5px;
+    display: flex;
+    column-gap: 1.5rem;
+    justify-content: space-between;
 }
 
 #button-box {
@@ -199,6 +202,20 @@ p {
 #button-box:hover {
     background: var(--primary-color);
     color: white;
+}
+
+#closeBanner {
+    color: red;
+    font-size: 2rem;
+    background: lightblue;
+    align-self: center;
+    padding: 3px;
+    border-radius: 20px;
+    min-width: 40px;
+}
+
+#closeBanner:hover{
+    cursor: pointer;
 }
 
 #content {
