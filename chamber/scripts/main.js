@@ -59,3 +59,17 @@ function changeCardLinkColor(color) {
 		}
 	}
 }
+
+// ToggleBanner  
+const bannerEle = document.querySelector("#banner");
+
+function ToggleBanner() {
+  const day = new Date();
+  if (day.getDay() == 1 || day.getDay() == 2 || day.getDay() == 3) {
+    bannerEle.style.display = "block";
+  } else {
+    bannerEle.style.display = "none";
+  }
+}
+
+ToggleBanner();

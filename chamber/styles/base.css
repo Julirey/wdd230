@@ -176,6 +176,14 @@ p {
     color: rgb(255, 255, 0);
 }
 
+#banner {
+    background: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: -5px;
+}
+
 #button-box {
     grid-area: 1/2/3/3;
     justify-self: center;
@@ -233,6 +241,18 @@ p {
 
 #footer-infobox a:hover {
     text-decoration: underline;
+}
+
+#forecast {
+    text-align: center;
+    width: 80%;
+    margin: 0px auto;
+}
+
+#forecast .card {
+    padding-bottom: 20px;
+    max-width: 300px;
+    margin: 20px auto;
 }
 
 #hero {
@@ -299,11 +319,18 @@ p {
     column-gap: 10px;
 }
 
-#weather hr{
+#weather hr, #weather-icon {
     grid-column: span 2;
 }
 
-#weather p:nth-child(2n+1) {
+#weather-icon {
+    background: rgb(235, 235, 235);
+    border: solid 3px lightgray;
+    border-radius: 4px;
+    justify-self: center;
+}
+
+#weather p:nth-child(2n+2) {
     display: flex;
     justify-content: flex-end;
 }
