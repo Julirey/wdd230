@@ -59,7 +59,6 @@ async function apiFetchForecast() {
     if (response.ok) {
       const data = await response.json();
       displayForecast(data);
-      console.table(data)
     } else {
         throw Error(await response.text());
     }
