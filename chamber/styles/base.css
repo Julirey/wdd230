@@ -104,13 +104,6 @@ p {
     text-align: center;
 }
 
-.member img {
-    max-height: fit-content;
-    max-width: 200px;
-    border-radius: 20px;
-    overflow: hidden;
-}
-
 .member hr + p {
     text-align: right;
 }
@@ -182,7 +175,7 @@ p {
     text-align: center;
     padding: 20px;
     margin-top: -5px;
-    display: flex;
+    display: none;
     column-gap: 1.5rem;
     justify-content: space-between;
 }
@@ -336,12 +329,13 @@ p {
     column-gap: 10px;
 }
 
-#weather hr, #weather-icon {
+#weather hr, .weather-icon {
     grid-column: span 2;
 }
 
-#weather-icon {
-    background: rgb(235, 235, 235);
+.weather-icon {
+    background: rgb(181,181,181);
+background: linear-gradient(-45deg, rgb(185, 185, 185) 0%, rgb(221, 221, 221) 50%, rgba(255,255,255,1) 100%);
     border: solid 3px lightgray;
     border-radius: 4px;
     justify-self: center;
@@ -512,7 +506,7 @@ figcaption {
     padding: 10px;
 }
 
-.grid img {
+.grid img, .card.member img {
     background: white;
 	border: 1px solid #fff;
 	box-shadow: 0 0 10px #333;

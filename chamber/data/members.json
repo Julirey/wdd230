@@ -4,6 +4,7 @@
             "name": "Instituto Latino",
             "address": "Esquina Guanabano, Edif. 38, Piso 1A",
             "phone": "(0212) 2715951",
+            "email": "infoinstitulolatino@gmail.com",
             "url": "https://www.institutolatino.com",
             "logo": "https://julirey.github.io/wdd230/chamber/images/instituto.webp",
             "membership": "Silver"
@@ -12,6 +13,7 @@
             "name": "Mara transport",
             "address": "Av. San Juan Bosco, c/6ta. Transv. P-4, Consult. 407",
             "phone": "(0243) 2464533",
+            "email": "transportmaramail@hotmail.com",
             "url": "https://www.mara-transport.com",
             "logo": "https://julirey.github.io/wdd230/chamber/images/mara-tranport.webp",
             "membership": "Non-Profit"
@@ -20,6 +22,7 @@
             "name": "Hidrolago",
             "address": "C. C. Maracaibo, Mezz., Local 17",
             "phone": "(0212) 9920352",
+            "email": "contactus@hidralago.com",
             "url": "https://www.hidrolagocc.ve",
             "logo": "https://julirey.github.io/wdd230/chamber/images/hidrolago.webp",
             "membership": "Gold"
@@ -28,6 +31,7 @@
             "name": "Cima",
             "address": "Transv. 4, Centro Industrial Apollo 11",
             "phone": "(0212) 6332156",
+            "email": "contactcima@gmail.com",
             "url": "https://www.elcimamaracaibo.com",
             "logo": "https://julirey.github.io/wdd230/chamber/images/cima.webp",
             "membership": "Silver"
@@ -36,6 +40,7 @@
             "name": "Codipaca",
             "address": "Edificio Profesional, Piso 1, Oficina 1",
             "phone": "(0242) 3612381",
+            "email": "codipacainformation@gmail.com",
             "url": "https://www.codipaca.com",
             "logo": "https://julirey.github.io/wdd230/chamber/images/codipaca.webp",
             "membership": "Bronze"
@@ -44,6 +49,7 @@
             "name": "Decandido",
             "address": "Final Av. Casanova, al lado de Pajarolandia",
             "phone": "(0251) 4452827",
+            "email": "decandidoinfo@gmail.com",
             "url": "https://www.decandidomaracaibo.com",
             "logo": "https://julirey.github.io/wdd230/chamber/images/decandido.webp",
             "membership": "Bronze"
@@ -52,6 +58,7 @@
             "name": "GMECA",
             "address": "Av. Paez, Ctro. Profesional el Paraiso",
             "phone": "(0212) 9593988",
+            "email": "contactgmeca@gmeca.com",
             "url": "https://www.gmeca.ve",
             "logo": "https://julirey.github.io/wdd230/chamber/images/gmeca.webp",
             "membership": "Gold"
@@ -60,6 +67,7 @@
             "name": "Distribuidora JK",
             "address": "Esq. Cuño a Guanábano, Ed Maiuri Local 2",
             "phone": "(0212) 3618967",
+            "email": "communicationjk@gmail.com",
             "url": "https://www.distrijk.com",
             "logo": "https://julirey.github.io/wdd230/chamber/images/distribuidora.webp",
             "membership": "Silver"
@@ -68,6 +76,7 @@
             "name": "MINTUR",
             "address": "Edificio Policlinica La Arboleda, Piso PB, Urbanización San Bernardino",
             "phone": "(0212) 5501882",
+            "email": "contactusmintur@mintur.com",
             "url": "https://www.rbvmintur.com",
             "logo": "https://julirey.github.io/wdd230/chamber/images/mintur.webp",
             "membership": "Silver"

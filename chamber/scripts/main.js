@@ -1,3 +1,5 @@
+const path = location.pathname;
+const page = path.split("/").pop();
 
 // Get Elements
 const ParagraphElement = document.querySelector("#copyrightYear");
@@ -30,51 +32,79 @@ modeButton.addEventListener("click", () => {
 		body.style.color = "#fff";
 		changeCardColor("#020066");
 		changeCardLinkColor("white");
+		if (page === "join.html") {
+			changeFormColor("#020066", "white", "white");
+		};
 		modeButton.textContent = "☀️";
 	} else {
-		body.style.background = "#fff";
-		body.style.color = "#000";
-		changeCardColor("rgb(231, 231, 231)");
-		changeCardLinkColor("blue")
+		// Discovered that leaving the values empty
+		// defaults to the original css values
+		body.style.background = "";
+		body.style.color = "";
+		changeCardColor("");
+		changeCardLinkColor("")
+		if (page === "join.html") {
+			changeFormColor("", "", "");
+		};
 		modeButton.textContent = "🌙";
 	}
 });
 
 function changeCardColor(color) {
 	let cards = document.querySelectorAll(".card");
-	for (let i = 0; i < cards.length; i++) {
-		let card = cards[i];
+	for (const element of cards) {
+		let card = element;
 		card.style.background = color;
 	}
 }
 
 function changeCardLinkColor(color) {
 	let cards = document.querySelectorAll(".card");
-	for (let i = 0; i < cards.length; i++) {
-		let card = cards [i];
+	for (const element of cards) {
+		let card = element
 		let links = card.querySelectorAll("a");
-		for (let i = 0; i < links.length; i++) {
-			let link = links[i]
+		for (const element of links) {
+			let link = element
 			link.style.color = color;
 		}
 	}
 }
 
+function changeFormColor(color, color2, color3) {
+	let form = document.querySelector("fieldset");
+	form.style.background = color;
+
+	let legend = form.querySelector("legend");
+	legend.style.color = color2;
+
+	let divs = form.querySelectorAll("div");
+	for (const element of divs) {
+		let div = element
+		div.style.color = color2;
+	}
+
+	let labels = form.querySelectorAll("label");
+	for (const element of labels) {
+		let label = element
+		label.style.color = color3;
+	}
+};
+
 // ToggleBanner  
-const bannerEle = document.querySelector("#banner");
-const bannerButton = document.querySelector("#closeBanner")
+if (page === "index.html" || page === "") {
+	const bannerEle = document.querySelector("#banner");
+	const bannerButton = document.querySelector("#closeBanner")
 
-bannerButton.addEventListener("click", () => {
-	bannerEle.style.display = "none";
-});
+	bannerButton.addEventListener("click", () => {
+		bannerEle.style.display = "none";
+	});
 
-function ToggleBanner() {
-  const day = new Date();
-  if (day.getDay() == 1 || day.getDay() == 2 || day.getDay() == 3) {
-    bannerEle.style.display = "flex";
-  } else {
-    bannerEle.style.display = "none";
-  }
-}
+	function ToggleBanner() {
+		const day = new Date();
+		if (day.getDay() === 1 || day.getDay() === 2 || day.getDay() === 3) {
+			bannerEle.style.display = "flex";
+		}
+	}
 
-ToggleBanner();
+	ToggleBanner();
+};

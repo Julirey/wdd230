@@ -1,7 +1,7 @@
 // Select HTML elements in the document
 const currentTemp = document.querySelector("#temperature");
 const weatherDesc = document.querySelector("#weather-desc");
-const weatherIcon = document.querySelector("#weather-icon");
+const weatherIcon = document.querySelector(".weather-icon");
 
 const wSpeedEle = document.querySelector("#windspeed");
 const wChillEle = document.querySelector("#windchill");
@@ -25,7 +25,7 @@ async function apiFetch() {
 
 // Display 
 function displayResults(data) {
-  const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+  let iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
   let desc = data.weather[0].description;
   let temp = data.main.temp;
   let wSpeed = data.wind.speed;
@@ -49,6 +49,9 @@ function displayResults(data) {
 const forecastElements = Array.from(
   document.getElementsByClassName("tempforecast")
 );
+const forecastImgElements = Array.from(
+  document.getElementsByClassName("weather-icon")
+);
 
 const urlForecast = "https:///api.openweathermap.org/data/2.5/forecast?lat=10.64&lon=-71.62&units=imperial&appid=3bf678e6bdd1c1720ca9fc7f3fd188a9"
 
@@ -70,7 +73,13 @@ async function apiFetchForecast() {
 // Display forecast
 function displayForecast(data) {
   for (let i = 0; i < forecastElements.length; i++) {
-    forecastElements[i].innerHTML = `Temperature: ${data.list[i].main.temp}&deg;F`;
+    let iconsrc = `https://openweathermap.org/img/w/${data.list[i].weather[0].icon}.png`;
+    let desc = data.list[i].weather[0].description;
+    let temp = data.list[i].main.temp;
+
+    forecastElements[i].innerHTML = `Temperature: ${temp}&deg;F`;
+    forecastImgElements[i+1].setAttribute("src", iconsrc);
+    forecastImgElements[i+1].setAttribute("alt", toTitleCase(desc));
   } 
 }
 
