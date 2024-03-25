@@ -36,6 +36,7 @@ const displayMembers = (members) => {
         let img = document.createElement("img");
         img.src = (member.logo);
         img.alt = (`Logo of ${member.name}`);
+        img.loading = "lazy";
 
         let h3 = document.createElement("h3");
         h3.textContent = member.name;
