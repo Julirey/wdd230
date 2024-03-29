@@ -12,7 +12,6 @@ const windChillCelsius = (temperature, windSpeed) =>
 
 if (temp <= 50 && wSpeed > 3) {
     let wChill = windChillCelsius(temp, wSpeed);
-    console.log(wChill);
     windchill.innerHTML = wChill.toFixed(2);
 } else {
     windchill.innerHTML = "N/a"; 

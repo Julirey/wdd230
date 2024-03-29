@@ -38,7 +38,6 @@ function displayResults(data) {
   
   if (temp <= 50 && wSpeed > 3) {
     let wChill = windChillCelsius(temp, wSpeed);
-    console.log(wChill);
     wChillEle.innerHTML = wChill.toFixed(2);
   } else {
     wChillEle.innerHTML = "N/a"; 
