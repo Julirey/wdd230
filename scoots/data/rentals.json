@@ -2,6 +2,8 @@
     "rentals": [
         {
             "name": "Honda Metro Scooter",
+            "description": "A European-style scooter with an appealing, rounded design, Honda's compact Metropolitan is simple to operate, a sensible choice for enjoyable, around-town transportation. Practical-minded customers will appreciate its in-dash and under-seat storage compartments, as well as its convenience hook for securing a bag, and an available rear carrier. However, where the Metropolitan really shines is in turning short hops into big fun.",
+            "image": "https://julirey.github.io/wdd230/scoots/images/metro-scooter.webp",
             "capacity": 1,
             "prices": {
                 "reservation": [
@@ -16,6 +18,8 @@
         },
         {
             "name": "Honda Dio Scooter",
+            "description": "A great little town bike that can do everything. Sure it isn't the fastest machine on the road but it is quick enough to beat most cars at the lights. It will zoom along at 80kph, and even a little more downhill. Recommended for its reliability. The space under the seat is big enough for your helmet and a few groceries on the way home from the shops.",
+            "image": "https://julirey.github.io/wdd230/scoots/images/dio-scooter.webp",
             "capacity": 2,
             "prices": {
                 "reservation": [
@@ -30,6 +34,8 @@
         },
         {
             "name": "Honda PCX150 Scooter",
+            "description": "This scooter is quick and responsive, a joy to ride at anything up to about 55 to 60 miles per hour. It starts reliably, runs so quietly that a lot of people think it's electric, and has very good milage. The perfect mix between a bike and a scooter with its sporty design and greaet capabilities. While it can technically go on the highway, it is not recommended.",
+            "image": "https://julirey.github.io/wdd230/scoots/images/pcx150-scooter.webp",
             "capacity": 2,
             "prices": {
                 "reservation": [
@@ -44,6 +50,8 @@
         },
         {
             "name": "Honda Pioneer ATV",
+            "description": "With huge towing capacity and equipped with a powerful engine that can develop speeds of up to 55mph. The Honda Pioneer is one of the few vehicle that vehicle handles even the roughest terrains with ease. The model's exterior provides the driver and the passengers with comfort during long rides, and the storage space in the back enables you to take all the supplies or equipment you may need while you're enjoying the countryside or preparing an outdoor sports event.",
+            "image": "https://julirey.github.io/wdd230/scoots/images/pioneer-atv.webp",
             "capacity": 4,
             "prices": {
                 "reservation": [
@@ -58,6 +66,8 @@
         },
         {
             "name": "Jeep Wrangler - 4 door with a/c",
+            "description": "If you're the kind of person who spends weekends in the great Jeep Wrangler is an SUV that will take you just about anywhere you want to go. Jeep has come a long way from its military roots and offers plenty of comforts. The Jeep Wrangler is a legend for good reasons. It's one of the most capable off-road SUVs money can buy, and it has a distinct aesthetic that makes it instantly recognizable. Available in 2-door and 4-door body styles, comes with removable roof options.",
+            "image": "https://julirey.github.io/wdd230/scoots/images/jeep-wangler4.webp",
             "capacity": 5,
             "prices": {
                 "reservation": [
@@ -72,6 +82,8 @@
         },
         {
             "name": "Jeep Wrangler - 2 door",
+            "description": "2-door version of the Jeep Wrangler. Trading cargo and space for maneuverability and control. A more afordable option that still keeps the spirit of its 4-door counterpart.",
+            "image": "https://julirey.github.io/wdd230/scoots/images/jeep-wangler2.webp",
             "capacity": 4,
             "prices": {
                 "reservation": [
