@@ -1,0 +1,88 @@
+{
+    "rentals": [
+        {
+            "name": "Honda Metro Scooter",
+            "capacity": 1,
+            "prices": {
+                "reservation": [
+                    20,
+                    30
+                ],
+                "walk-in": [
+                    25,
+                    35
+                ]
+            }
+        },
+        {
+            "name": "Honda Dio Scooter",
+            "capacity": 2,
+            "prices": {
+                "reservation": [
+                    30,
+                    40
+                ],
+                "walk-in": [
+                    35,
+                    45
+                ]
+            }
+        },
+        {
+            "name": "Honda PCX150 Scooter",
+            "capacity": 2,
+            "prices": {
+                "reservation": [
+                    40,
+                    50
+                ],
+                "walk-in": [
+                    45,
+                    55
+                ]
+            }
+        },
+        {
+            "name": "Honda Pioneer ATV",
+            "capacity": 4,
+            "prices": {
+                "reservation": [
+                    50,
+                    70
+                ],
+                "walk-in": [
+                    60,
+                    80
+                ]
+            }
+        },
+        {
+            "name": "Jeep Wrangler - 4 door with a/c",
+            "capacity": 5,
+            "prices": {
+                "reservation": [
+                    70,
+                    100
+                ],
+                "walk-in": [
+                    85,
+                    125
+                ]
+            }
+        },
+        {
+            "name": "Jeep Wrangler - 2 door",
+            "capacity": 4,
+            "prices": {
+                "reservation": [
+                    60,
+                    85
+                ],
+                "walk-in": [
+                    70,
+                    90
+                ]
+            }
+        }
+    ]
+}
