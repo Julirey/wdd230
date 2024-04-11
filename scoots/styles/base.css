@@ -60,7 +60,6 @@ header img {
 }
 
 hr {
-  display: block;
   height: 1px;
   border: 0;
   border-top: 1px solid gray;
@@ -68,8 +67,31 @@ hr {
   padding: 0;
 }
 
-h2 {
+main h2 {
   text-align: center;
+}
+
+main h3 {
+  position: relative;
+  width: fit-content;
+  padding: 1px 5px;
+  border-right: solid 2px var(--secondary-color);
+  border-bottom: solid 2px var(--secondary-color);
+  border-radius: 5px;
+  background: white;
+}
+
+main h3::after {
+  display: inline-block;
+  content: "";
+  height: 3px;
+  background: red;
+  position: absolute;
+  width: 800px;
+  top: 50%;
+  margin-top: -2px;
+  margin-left: 5px;
+  z-index: -1;
 }
 
 main {
@@ -84,8 +106,8 @@ p {
 
 /* Class Selectors */
 .card {
-  border: solid var(--secondary-color) 3px;
-  border-radius: 2px;
+  border-right: solid 3px var(--secondary-color);
+  border-bottom: solid 5px var(--secondary-color);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin: 20px 0px;
   padding: 0px 20px;
@@ -96,6 +118,15 @@ p {
   color: blue;
   font-family: var(--paragraph-font);
   display: block;
+}
+
+.map {
+  border: 0px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 20px auto;
+  width: 100%;
+  overflow: hidden;
 }
 
 .navigation {
@@ -195,9 +226,13 @@ p {
   cursor: pointer;
 }
 
-#content {
-  display: grid;
+#content,
+#content-rentals,
+#content-reservations,
+#content-contact {
   padding: 0px 16px;
+  margin: 0px auto;
+  max-width: 800px;
 }
 
 #rentals {
@@ -242,7 +277,6 @@ p {
 
 #forecast {
   text-align: center;
-  width: 80%;
   margin: 0px auto;
 }
 
@@ -270,7 +304,7 @@ p {
 
 #hero-img {
   width: 100%;
-  height: fit-content; 
+  height: fit-content;
   border-bottom: solid var(--secondary-color) 5px;
 }
 
@@ -331,7 +365,43 @@ p {
   justify-self: center;
 }
 
-#weather p:nth-child(2n + 2) {
+#weather p:nth-child(2n + 1) {
   display: flex;
   justify-content: flex-end;
+}
+
+/* Rentals page */
+table {
+  border-collapse: collapse;
+  border: solid 1px black;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: clamp(0.75rem, 1.2vw, 2rem);
+}
+
+td,
+th {
+  border: solid 1px lightgray;
+  padding: 5px;
+  text-align: center;
+}
+
+.tableheader {
+  background-color: orangered;
+  text-align: center;
+  color: white;
+  font-size: 14pt;
+}
+
+.rental {
+  padding-top: 20px;
+}
+
+.rental img {
+  width: 100%;
+  height: fit-content;
+}
+
+.rental img:hover {
+  box-shadow: 0 0 10px #333;
 }

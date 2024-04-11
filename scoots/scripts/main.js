@@ -32,9 +32,6 @@ modeButton.addEventListener("click", () => {
 		body.style.color = "#fff";
 		changeCardColor("#020066");
 		changeCardLinkColor("white");
-		if (page === "join.html") {
-			changeFormColor("#020066", "white", "white");
-		};
 		modeButton.textContent = "☀️";
 	} else {
 		// Discovered that leaving the values empty
@@ -43,9 +40,6 @@ modeButton.addEventListener("click", () => {
 		body.style.color = "";
 		changeCardColor("");
 		changeCardLinkColor("")
-		if (page === "join.html") {
-			changeFormColor("", "", "");
-		};
 		modeButton.textContent = "🌙";
 	}
 });

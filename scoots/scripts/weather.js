@@ -1,12 +1,14 @@
 // Select HTML elements in the document
 const currentTemp = document.querySelector("#temperature");
+const currentHumid = document.querySelector("#humidity");
+const weatherGroup = document.querySelector("#grouptype")
 const weatherDesc = document.querySelector("#weather-desc");
 const weatherIcon = document.querySelector(".weather-icon");
 
 const wSpeedEle = document.querySelector("#windspeed");
 const wChillEle = document.querySelector("#windchill");
 
-const url = "https:///api.openweathermap.org/data/2.5/weather?lat=10.64&lon=-71.62&units=imperial&appid=3bf678e6bdd1c1720ca9fc7f3fd188a9"
+const url = "https:///api.openweathermap.org/data/2.5/weather?lat=20.51&lon=-86.94&units=imperial&appid=3bf678e6bdd1c1720ca9fc7f3fd188a9"
 
 // Fetch current weather
 async function apiFetch() {
@@ -26,14 +28,18 @@ async function apiFetch() {
 // Display 
 function displayResults(data) {
   let iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+  let group = data.weather[0].main;
   let desc = data.weather[0].description;
   let temp = data.main.temp;
+  let humid = data.main.humidity;
   let wSpeed = data.wind.speed;
   
   weatherIcon.setAttribute("src", iconsrc);
   weatherIcon.setAttribute("alt", toTitleCase(desc));
   weatherDesc.innerHTML = `<strong>${toTitleCase(desc)}</strong>`;
+  weatherGroup.innerHTML = group;
   currentTemp.innerHTML = `${Math.round(temp)}&deg;F`;
+  currentHumid.innerHTML = `${humid}%`;
   wSpeedEle.innerHTML = `${wSpeed} mph`;
   
   if (temp <= 50 && wSpeed > 3) {
@@ -52,9 +58,10 @@ const forecastImgElements = Array.from(
   document.getElementsByClassName("weather-icon")
 );
 
-const urlForecast = "https:///api.openweathermap.org/data/2.5/forecast?lat=10.64&lon=-71.62&units=imperial&appid=3bf678e6bdd1c1720ca9fc7f3fd188a9"
+const urlForecast = "https:///api.openweathermap.org/data/2.5/forecast?lat=20.51&lon=-86.94&units=imperial&appid=3bf678e6bdd1c1720ca9fc7f3fd188a9"
 
-// Fetch forecast
+// Fetch forecast 
+// TODO: 3PM THINGY
 async function apiFetchForecast() {
   try {
     const response = await fetch(urlForecast);
