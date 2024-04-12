@@ -8,6 +8,8 @@ const weatherIcon = document.querySelector(".weather-icon");
 const wSpeedEle = document.querySelector("#windspeed");
 const wChillEle = document.querySelector("#windchill");
 
+const maxTemp = document.querySelector("#maxTemp");
+
 const url = "https:///api.openweathermap.org/data/2.5/weather?lat=20.51&lon=-86.94&units=imperial&appid=3bf678e6bdd1c1720ca9fc7f3fd188a9"
 
 // Fetch current weather
@@ -33,6 +35,7 @@ function displayResults(data) {
   let temp = data.main.temp;
   let humid = data.main.humidity;
   let wSpeed = data.wind.speed;
+  let tempMax = data.main.temp_max;
   
   weatherIcon.setAttribute("src", iconsrc);
   weatherIcon.setAttribute("alt", toTitleCase(desc));
@@ -41,7 +44,8 @@ function displayResults(data) {
   currentTemp.innerHTML = `${Math.round(temp)}&deg;F`;
   currentHumid.innerHTML = `${humid}%`;
   wSpeedEle.innerHTML = `${wSpeed} mph`;
-  
+  maxTemp.innerHTML = `${tempMax}&deg;F`;
+
   if (temp <= 50 && wSpeed > 3) {
     let wChill = windChillCelsius(temp, wSpeed);
     wChillEle.innerHTML = wChill.toFixed(2);
@@ -61,7 +65,6 @@ const forecastImgElements = Array.from(
 const urlForecast = "https:///api.openweathermap.org/data/2.5/forecast?lat=20.51&lon=-86.94&units=imperial&appid=3bf678e6bdd1c1720ca9fc7f3fd188a9"
 
 // Fetch forecast 
-// TODO: 3PM THINGY
 async function apiFetchForecast() {
   try {
     const response = await fetch(urlForecast);
@@ -69,7 +72,7 @@ async function apiFetchForecast() {
       const data = await response.json();
       displayForecast(data);
     } else {
-        throw Error(await response.text());
+      throw Error(await response.text());
     }
   } catch (error) {
       console.log(error);
@@ -106,6 +109,3 @@ function toTitleCase(str) {
 
 apiFetch();
 apiFetchForecast();
-
-
-

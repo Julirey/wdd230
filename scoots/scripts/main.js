@@ -104,13 +104,4 @@ if (page === "index.html" || page === "") {
 	bannerButton.addEventListener("click", () => {
 		bannerEle.style.display = "none";
 	});
-
-	function ToggleBanner() {
-		const day = new Date();
-		if (day.getDay() === 1 || day.getDay() === 2 || day.getDay() === 3) {
-			bannerEle.style.display = "flex";
-		}
-	}
-
-	ToggleBanner();
 };
