@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="favicon.ico">
-    <meta property="og:title" content="~Scoots~ ">
+    <meta property="og:title" content="~Scoots~ | Contact">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.goatsontheroad.com%2Fwp-content%2Fuploads%2F2018%2F07%2Fcozumel-island-san-miguel-capital-city-1.jpg&f=1&nofb=1&ipt=2b69a0409964ec9174872f525265e8ee9a0097494fa56c60463f13cfe35b64d0&ipo=images">
     <meta property="og:url" content="https://julirey.github.io/wdd230/scoots/contact">
@@ -43,7 +43,10 @@
         </div>
     </header>
     <button id="menu" aria-label="NavMenu"></button>
-    <div id="mode">🌙</div>
+    <label class="switch">
+        <input type="checkbox" id="check">
+        <span class="slider round"></span>
+    </label>
     <nav>
         <ul class="navigation">
             <li><a href="index.html">Home</a></li>
@@ -54,8 +57,37 @@
     </nav>
     <main>
         <div id="content-contact">
+            <h2>Feel free to contact us at any time!</h2>
+            <section class="card">
+                <h3>Contact Information</h3>
+                <p>Email: contactus@scoots.com</p>
+                <p>Local messaging: +52 222.2451442</p>
+                <p>International Calls: +1 202-918-2132</p>
+                <hr>
+                <p>Facebook page: ScootsMX</p>
+                <p>Instagram: @ScootsOfficial</p>
+            </section>
+            <h2>Meet us at any of our branches</h2>
             <iframe class="map" title="MapLocation" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d29895.93264372297!2d-86.9713252!3d20.5065714!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e59cebd031b81%3A0x1d4d43952273f214!2sFerry%20a%20Playa%20del%20Carmen!5e0!3m2!1ses-419!2sve!4v1712828554206!5m2!1ses-419!2sve" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <iframe class="map" title="MapLocation2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3737.7232853915175!2d-86.97600862400404!3d20.4765555065142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e57491a71c81d%3A0x6933058e58e0ee3d!2sTerminal%20Maritima%20Puerta%20Maya!5e0!3m2!1ses-419!2sve!4v1712828804260!5m2!1ses-419!2sve" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        </div>
+            <iframe class="map" title="MapLocation2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3737.7232853915175!2d-86.97600862400404!3d20.4765555065142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e57491a71c81d%3A0x6933058e58e0ee3d!2sTerminal%20Maritima%20Puerta%20Maya!5e0!3m2!1ses-419!2sve!4v1712828804260!5m2!1ses-419!2sve" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <h2>If you have a request, be sure to fill this form.</h2>
+            <form action="thankyou.html" method="get" class="wf1">
+                <fieldset>
+                    <legend>Contact Us</legend>
+                    <label>First Name* <input type="text" name="fname" id="fname" required></label>
+                    <label>Last Name* <input type="text" name="lname" id="lname" required></label>
+                    <label>Phone* <input type="tel" name="phone" id="phone" placeholder="1235551234" required></label>  
+                    <label>Email* <input type="email" name="email" id="email" placeholder="someone@gmail.com" required></label>
+                    <label>Home state or Country* <input type="text" name="home" id="home" required></label>
+                    <label>Request Information*
+                        <textarea name="request" id="request" rows="5" cols="30" placeholder=" Situation, issues, or request along with any relevant information." required></textarea>
+                    </label>
+                    
+                    <input type="hidden" name="date" id="date" value="0">
+                </fieldset>
+                <input type="submit" id="submit" value="Send Request">
+            </form>
+        </div>
     </main>
     <footer>
         <section id="footer-infobox">

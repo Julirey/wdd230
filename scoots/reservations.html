@@ -30,7 +30,7 @@
     <header>
         <img src="images/logo.webp" alt="Logo of Scoots">
         <div id="Title">
-            <h1>~Scoots~ </h1>
+            <h1>~Scoots~</h1>
         </div>
         <div class="social">
             <a href="#" target="_blank">
@@ -42,7 +42,10 @@
         </div>
     </header>
     <button id="menu" aria-label="NavMenu"></button>
-    <div id="mode">🌙</div>
+    <label class="switch">
+        <input type="checkbox" id="check">
+        <span class="slider round"></span>
+    </label>
     <nav>
         <ul class="navigation">
             <li><a href="index.html">Home</a></li>
@@ -52,7 +55,55 @@
         </ul>
     </nav>
     <main>
-        
+        <div id="content-reservations">
+            <h2>Reservations</h2>
+            <section class="card">
+                <h3>Rental Agreements</h3>
+                <ul>
+                    <li>A $50 security deposit is required to confirm reservations.</li>
+                    <li>A valid drivers license is required in hand at the time of rental.</li>
+                    <li>No one under the age of 12 years of age are allowed to ride on the scooters.</li>
+                    <li>Fuel charge is not included.</li>
+                    <li>Unlimited mileage.</li>
+                    <li>Liability insurance is included.</li>
+                    <li>Damage insurance is available for purchase.</li>
+                    <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+                    <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</li>
+                    <li>Rentals may be returned to either physical location.</li>
+                </ul>
+            </section>
+            <form action="thankyou.html" method="get" class="wf1">
+                <fieldset>
+                    <legend>Rental Information</legend>
+                    <label>Date* <input type="date" name="date" id="date" required></label>
+                    <div>Rental Period</div>
+                    <label><input type="radio" name="period" value="halfday">Half Day (3 hrs)</label>
+                    <label><input type="radio" name="period" value="fullday">Full Day</label>
+                    <Label>Rental Type
+                        <select name="rental">
+                                <option value="">Please Select</option>
+                            <option value="metro">Honda Metropolitan</option>
+                            <option value="dio">Honda Dio</option>
+                            <option value="pcx150">Honda PCX150</option>
+                            <option value="prioneeratv">Honda Pioneer ATV</option>
+                            <option value="wrangler4">Jeep Wrangler - 4 door with a/c</option>
+                            <option value="wrangler2">Jeep Wrangler - 2 door</option>
+                        </select>
+                    </Label>
+                    <label>Phone* <input type="tel" name="phone" id="phone" placeholder="1235551234" required></label>  
+                    <label>Name* <input type="text" name="name" id="name" required></label>
+                    <label>Email* <input type="email" name="email" id="email" placeholder="someone@gmail.com" required></label>
+                    <label>Home state or Country* <input type="text" name="home" id="home" required></label>
+                    <label>Cruise Line (If Applicable) <input type="text" name="cruise" id="cruise" placeholder="(Optional)"></label>
+                    <label>Special accommodations/comments 
+                        <textarea name="comments" id="comments" rows="5" cols="30" placeholder=" e.g. the need and location of a drop-off request."></textarea>
+                    </label>
+                    
+                    <input type="hidden" name="date" id="date" value="0">
+                </fieldset>
+                <input type="submit" id="submit" value="Book a Reservation">
+            </form>
+        </div>
     </main>
     <footer>
         <section id="footer-infobox">
@@ -81,6 +132,5 @@
         </div>
     </footer>
     <script src="scripts/main.js"></script>
-    <script src="scripts/weather.js"></script>
 </body>
 </html>

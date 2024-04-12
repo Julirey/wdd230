@@ -23,26 +23,38 @@ hamButton.addEventListener("click", () => {
 });
 
 // Dark mode
-const modeButton = document.querySelector("#mode");
+const modeButton = document.querySelector("#check");
 const body = document.querySelector("body");
 
 modeButton.addEventListener("click", () => {
-	if (modeButton.textContent.includes("🌙")) {
+	if (modeButton.checked) {
 		body.style.background = "#000";
 		body.style.color = "#fff";
-		changeCardColor("#020066");
+		changeCardColor("#2c2f33");
 		changeCardLinkColor("white");
-		modeButton.textContent = "☀️";
+		changeTitleColor("orangered")
+		if (page === "reservations.html" || page === "contact.html") {
+			changeFormColor("#2c2f33", "white", "white");
+		};
 	} else {
-		// Discovered that leaving the values empty
-		// defaults to the original css values
 		body.style.background = "";
 		body.style.color = "";
 		changeCardColor("");
 		changeCardLinkColor("")
-		modeButton.textContent = "🌙";
+		changeTitleColor("")
+		if (page === "reservations.html" || page === "contact.html") {
+			changeFormColor("", "", "");
+		};
 	}
 });
+
+function changeTitleColor(color) {
+	let titles = document.querySelectorAll("main h3");
+	for (const element of titles) {
+		let title = element;
+		title.style.background = color;
+	}
+}
 
 function changeCardColor(color) {
 	let cards = document.querySelectorAll(".card");

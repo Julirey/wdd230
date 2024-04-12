@@ -60,8 +60,8 @@
         display: none;
     }
 
-    #mode {
-        top: 0.70rem;
+    .switch {
+        top: 0.85rem;
     }
 }   
 
