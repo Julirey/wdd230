@@ -77,7 +77,7 @@ main h3::after {
   height: 3px;
   background: red;
   position: absolute;
-  width: 800px;
+  width: 1600px;
   top: 50%;
   margin-top: -2px;
   margin-left: 5px;
@@ -197,7 +197,7 @@ p {
   transform: translate(-50%, 0);
   padding: 0px 5px;
   column-gap: 1.5rem;
-  justify-content: center; 
+  justify-content: center;
   min-height: 80px;
 }
 
@@ -239,7 +239,7 @@ p {
 #content-contact {
   padding: 0px 16px;
   margin: 0px auto;
-  max-width: 800px;
+  max-width: 1024px;
 }
 
 #rentals {
@@ -377,7 +377,7 @@ p {
   justify-content: flex-end;
 }
 
- .switch {
+.switch {
   position: absolute;
   top: 5rem;
   right: 0.9rem;
@@ -399,8 +399,8 @@ p {
   right: 0;
   bottom: 0;
   background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .slider:before {
@@ -411,8 +411,8 @@ p {
   left: 4px;
   bottom: 4px;
   background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .switch input:checked + .slider {
@@ -435,7 +435,7 @@ p {
 
 .slider.round:before {
   border-radius: 50%;
-} 
+}
 
 /* Rentals page */
 table {
@@ -475,7 +475,7 @@ th {
 
 /* Reservations page */
 .wf1 fieldset {
-  margin: 2rem 0;
+  margin: 1rem 0px 2rem;
   border: 3px solid var(--secondary-color);
   border-radius: 3px;
   padding: 0.5rem 3%;
@@ -529,7 +529,8 @@ th {
   margin: -1rem 2% 2rem 2%;
 }
 
-.wf1 #comments, .wf1 #request {
+.wf1 #comments,
+.wf1 #request {
   margin: 10px 0px;
   width: 100%;
 }
