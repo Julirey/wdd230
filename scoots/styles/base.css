@@ -114,12 +114,6 @@ p {
   overflow: hidden;
 }
 
-.card a {
-  color: blue;
-  font-family: var(--paragraph-font);
-  display: block;
-}
-
 .map {
   border: 0px;
   border-radius: 5px;
@@ -199,6 +193,7 @@ p {
   column-gap: 1.5rem;
   justify-content: center;
   min-height: 80px;
+  z-index: 2;
 }
 
 #button-box {
@@ -348,10 +343,21 @@ p {
   font-size: 2rem;
 }
 
+#shop img {
+  width: 100%;
+  height: fit-content;
+  margin-bottom: 20px;
+}
+
 #weather {
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 10px;
+  padding-bottom: 10px;
+}
+
+#weather p {
+  margin-bottom: 0px;
 }
 
 #weather hr,
@@ -363,8 +369,9 @@ p {
   background: rgb(181, 181, 181);
   background: linear-gradient(
     -45deg,
-    rgb(185, 185, 185) 0%,
-    rgb(221, 221, 221) 50%,
+    rgb(110, 239, 243) 0%,
+    rgb(84, 230, 235) 25%,
+    rgba(177, 236, 238, 0.904) 50%,
     rgba(255, 255, 255, 1) 100%
   );
   border: solid 3px rgb(255, 218, 187);
@@ -467,10 +474,6 @@ th {
 .rental img {
   width: 100%;
   height: fit-content;
-}
-
-.rental img:hover {
-  box-shadow: 0 0 10px #333;
 }
 
 /* Reservations page */
